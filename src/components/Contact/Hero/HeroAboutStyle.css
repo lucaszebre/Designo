@@ -1,0 +1,228 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+label{
+    cursor: pointer;
+    border-bottom: #fff 4px solid;
+}
+
+
+.HeroAboutContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+.ErrorForm{
+    color:white;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+form{
+    padding: 3em;
+    justify-content: center;
+    background-color: #E7816B;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: end;
+}
+input,textarea{
+    border: none;
+    border-radius: 5px;
+    padding:1em 0 1em 0;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #fff;
+    background-color: #E7816B;
+    outline: none;
+    align-items: start;
+    text-align: start;
+    cursor: pointer;
+}
+textarea{
+    height: 150px;
+}
+input{
+    height: 40px;
+}
+.LabelForm{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+.HeroButton{
+    align-items: end;
+    background-color: #fffcfc;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 1em 0 1em 0;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 1em;
+    cursor: pointer;
+    outline: none;
+}
+.HeroAboutWrapperContact{
+    display: grid;
+    place-content: center;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+    background-color: #E7816B;
+    height: auto;
+    border-radius: 10px;
+    padding: 2em 0 4em 0;
+}
+
+
+.HeroAboutContent2{
+    background-color: #E7816B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: start;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 4em;
+    text-align: start;
+}
+
+.HeroAboutContent2 h1{
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    text-align: start;
+}
+
+.HeroAboutContent2 p{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+}
+
+.HeroAboutImageDesktop{
+    justify-content: center;  
+    align-items: center;
+    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.HeroAboutImageTablet,.HeroAboutImageMobile{
+    display: none;
+    z-index: 10;
+}
+
+.PatternAbout{
+    position: absolute;
+    z-index: 1;
+    width: 640px;
+    height: 640px;
+    left: -4rem;
+}
+
+@media (max-width:1024px){
+    .HeroAboutImageTablet{
+        display: block;
+        width: 100%;
+        margin-bottom: -1em;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 100%;
+    }
+
+    form{
+        margin-top: -5em;
+        width: 100%;
+    padding: 3em;
+    justify-content: center;
+    background-color: #E7816B;
+    display: flex;
+    flex-direction: column;
+    }
+    .HeroAboutImageDesktop{
+        display: none;
+    }
+
+    .HeroAboutWrapperContact{
+        border-top-left-radius: 0px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 632px;
+        padding: 5em 0 10em 0;
+    }
+    .HeroAboutContent2{
+        margin-top: 3em;
+        border-top-left-radius:10px;
+        border-bottom-right-radius:10px;
+        text-align: start;
+        align-items: start;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .HeroAboutImageMobile{
+        display: none;
+    }
+
+    .LabelFormLast{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: end;
+        text-align: end;
+    }
+    .HeroAboutContainer{
+        border-radius: 10px;
+    }
+}
+
+@media (max-width:768px){
+    .HeroAboutImageTablet{
+        display: none;}
+        .HeroAboutWrapperContact{
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+        width: 100%;
+        padding: 3em 0 3em 0;
+    }
+    .HeroAboutImageMobile{
+        display: block;
+        width: 100%;
+        margin-bottom: -1em;
+    }
+    .HeroAboutContent2{
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding-top: 10em;
+        padding-bottom: 20em;
+        text-align: center;
+        align-items: center;
+    }
+}

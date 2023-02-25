@@ -1,0 +1,163 @@
+.CardLocationContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    max-width: 1152px;
+
+}
+.BgPattern{
+    position: absolute;
+}
+.CardLocationWrapper{
+    width:90%;
+    max-width: 1440px;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    /* display: grid; */
+    /* grid-template-columns: 60% 1fr; */
+    /* grid-template-rows: 1fr; */
+    /* grid-column-gap: 10px; */
+    /* grid-row-gap: 0px; */
+    justify-content: space-between;
+
+}
+
+.BlockCardLocation{
+    height: 350px;
+    width: 730px;
+    position: relative;
+    background-color: #FDF3F0;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    place-content: baseline;
+    place-items: baseline;
+    padding-left: 4em;
+    align-items: center;
+    margin-right: 2em;
+    
+}
+    
+.EnWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    text-align: start;
+}
+
+.TitleLocation{
+    color: #E7816B;
+    font-weight: 500;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.WrapCardLocation1 p:first-child{
+    font-weight: 700;
+}
+.WrapCardLocation2 p:first-child{
+    font-weight: 700;
+}
+.WrapCardLocation1 p,.WrapCardLocation2 p{
+    color: #333136;
+    margin-bottom: 0.5em;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.WrapCardLocation1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    text-align: start;
+    grid-area: 2 / 1 / 3 / 2;
+    margin-top: -9em;
+}
+.WrapCardLocation2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    text-align: start;
+    grid-area: 2 / 2 / 3 / 3;
+    margin-top: -9em;
+}
+
+.CardLocationImageD{
+    height: 356px;
+    width: 326px;
+    border-radius: 10px;
+    
+}
+
+.CardLocationImageT{
+    display: none;
+}
+
+
+@media (max-width:1024px){
+.CardLocationWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.CardLocationImageD1{
+    display: none;
+}
+.CardLocationImageT{
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+}
+.BlockCardLocation{
+    width: 100%;
+    padding-left: 0;
+    height: 100%;
+    padding: 4em;
+    margin-top: 1em;
+    margin-right: 0em;
+}
+.WrapCardLocation1{
+    margin-top: 0;
+}
+
+.WrapCardLocation2{
+    margin-top: 0;
+}
+}
+
+
+@media (max-width:768px){
+    .CardLocationWrapper{
+        width: 100%;
+    }
+    .BlockCardLocation{
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .WrapCardLocation1,.WrapCardLocation2{
+        text-align: center;
+        align-items: center;
+    }
+    .CardLocationImageT{
+        border-radius: 0;
+    }
+}

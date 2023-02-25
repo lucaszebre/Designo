@@ -1,0 +1,165 @@
+.FooterContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #1D1C1E;
+    height: 393px;
+    position: sticky;
+    position: relative;
+    
+
+}
+.hover-underline-animation1 {
+    display: inline-block;
+    position: relative;
+    color: 
+    blanchedalmond
+    }
+
+.hover-underline-animation1:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: blanchedalmond;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation1:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.FooterLogo{
+    width: 202px;
+    height: 27px;
+}
+.FooterWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    position: relative;
+    max-width: 1296px;
+}
+.Block1Footer{
+padding-top: 4em;
+padding-bottom: 4em;
+
+}
+
+.Block2Footer{
+    margin-top: -4rem;
+}
+
+.Block1Footer,.Block2Footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    
+    width: 100%;
+}
+
+.FooterList,.FooterLogoSocials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.FooterAdress,.FooterContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    line-height: 1.2;
+}
+
+.FooterItems1,.FooterItems2{
+    list-style: none;
+    margin-right: .5em;
+    cursor: pointer !important;
+    z-index: 20;
+    position: relative;
+}
+
+
+.FooterItems2{
+    color: blanchedalmond;
+    list-style: none;
+    margin-right: .5em;
+    text-decoration: none;
+}
+
+.FooterAdressItems{
+    color: gray ;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.FooterContactItems{
+    color: gray ;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.FooterLogoSocials img{
+    margin-right: .5em;
+}
+
+.logosocials:hover{
+transition: all 0.2s ease-in-out;
+transform: scale(1.2);
+cursor: pointer;
+}
+
+@media (max-width:768px){
+    .Block1Footer{
+        flex-direction: column;
+        
+    }
+
+    
+    .Block2Footer{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .FooterAdress,.FooterContact,.FooterLogoSocials{
+        align-items: center;
+        margin-top: 2em;
+    }
+
+    .FooterContainer{
+        height: 800px;
+    }
+
+    .FooterList{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FooterItems{
+        margin-top: 1em;
+    }
+    .FooterItems1,.FooterAdressItems,.FooterContactItems{
+        margin-top: .5em;
+    }
+}
+
+@media (max-width: 1024px){
+    .FooterWrapper{
+        max-width: 768px;
+    }
+}

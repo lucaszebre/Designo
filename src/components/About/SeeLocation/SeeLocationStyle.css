@@ -1,0 +1,25 @@
+.SeeLocationContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 4em;
+    
+}
+
+.SeeLocationWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .SeeLocationWrapper{
+        flex-direction: column;
+    }
+}
+    

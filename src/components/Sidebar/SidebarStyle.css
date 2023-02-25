@@ -1,0 +1,52 @@
+
+@media (min-width: 768px) {
+    .NavListMobile {
+        display: none;
+    }
+}
+
+.NavListMobile{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.NavItemMobile{
+    list-style: none;
+}
+
+.NavLinkMobile{
+    text-decoration: none;
+    color: #333136;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.NavListMobile{
+    display: flex;
+    position: fixed;
+    background-color:#1D1C1E;
+    width: 100vw;
+    height: 400px;
+    z-index: 20;
+    top: 110px;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3em;
+    align-items: start;
+    text-align: start;
+}
+
+.NavLinkMobile{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: .1em;
+    text-align: start;
+
+}

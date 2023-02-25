@@ -1,0 +1,140 @@
+.CenterContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.Link{
+    text-decoration: none;
+    position: relative;
+    z-index: 12;
+
+}
+.CenterWrapper{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    grid-template-rows: repeat(2, 49%);
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    margin-top: 2em;
+    height: 640px;
+    
+}
+.Block1Center:before,.Block2Center:before, .Block3Center:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 10px;
+}
+.Block1Center:hover::before, .Block2Center:hover::before, .Block3Center:hover::before{
+    background: rgba(231, 129, 107, 0.7);
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+.Block1Center{
+    width: 100%;
+    cursor: pointer;
+    background: url("/assets/home/desktop/image-web-design-large.jpg") no-repeat center;
+    display: flex;
+    justify-content: center;
+    grid-area: 1 / 1 / 3 / 2;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 10px;
+    background-size: 140%;
+    backdrop-filter: brightness(0.5);
+}
+
+.Block1Center:hover, .Block2Center:hover, .Block3Center:hover{
+    background-size: 120%;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.Block2Center{
+    
+    background: url("/assets/home/desktop/image-app-design.jpg") no-repeat center;
+    background-size: 140%;
+
+    display: flex;
+    justify-content: center;
+    grid-area: 1 / 2 / 2 / 3;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 20px;
+    backdrop-filter: brightness(0.5);
+}
+.Block3Center{
+    
+    background: url("/assets/home/desktop/image-graphic-design.jpg") no-repeat center;
+    display: flex;
+    justify-content: center;
+    grid-area: 2 / 2 / 3 / 3;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 20px;
+    background-size: 140%;
+    backdrop-filter: brightness(0.8);
+}
+
+
+
+
+.TitleCenter{
+    color: #FFF;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: .2em;
+    line-height: 0.9;
+}
+
+.ViewCenter{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: .5em;
+}
+
+.CenterRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (max-width:1024px) {
+    .CenterWrapper{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+    }
+    .Block1Center,.Block2Center, .Block3Center{
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .CenterWrapper{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+    }
+    .Block1Center,.Block2Center, .Block3Center{
+        width: 100%;
+        height: 250px;}
+}

@@ -1,0 +1,135 @@
+.NavContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding-top: 1em;
+    overflow: hidden;
+    margin-top: 2em;
+}
+
+.NavWrapper{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1296px;
+
+}
+
+.logoNav{
+    width: 202px;
+}
+.NavListMobile{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.NavList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.NavItem{
+    list-style: none;
+}
+
+.NavLink{
+    text-decoration: none;
+    color: #333136;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: 
+    #0a0b0b;
+    }
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+  #040404;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+@media screen and (max-width: 768px) {
+    .NavListMobile{
+        display: flex;
+        position: absolute;
+        background-color:#1D1C1E;
+        width: 100vw;
+        height: 400px;
+        z-index: 100;
+        top: 110px;
+        left: 0;
+        transition: all 0.5s ease-in-out;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        padding: 3em;
+        align-items: start;
+        text-align: start;
+    }
+    .NavList{
+        display: none;
+    }
+    .NavLink{
+        color: white;
+        font-size: 1.5rem;
+        margin-top: .1em;
+        text-align: start;
+    
+    }
+    .HamburgerNav{
+        display: block;
+        cursor: pointer;
+    }
+    .NavWrapper{
+        width: 90%;
+    }
+}
+    
+
+
+
+@media screen and (min-width: 768px){
+    .HamburgerNav{
+        display: none;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 1024px) {
+    
+    .NavWrapper{
+        width: 90%;
+        max-width: 768px;
+    }
+}
+
